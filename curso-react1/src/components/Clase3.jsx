@@ -10,7 +10,7 @@ const Clase3 = () => {
 
 
     return (
-        <div>Clase 3</div>
+        <div></div>
     )
 }
 export default Clase3;
