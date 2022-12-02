@@ -1,21 +1,25 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
-        <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">THE SOUP!</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">THE SOUP!</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Casa</a>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Casa</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Platos</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Platos</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">{props.nombre}</a>
+              </li>
+
             </ul>
           </div>
         </div>
