@@ -1,4 +1,5 @@
 import React from "react";
+import IteamCount from "./IteamCount";
 
 const IteamListContainer = ({greeting}) => {
     return(
@@ -10,6 +11,9 @@ const IteamListContainer = ({greeting}) => {
                     </div>
                 </div>
             </div>
+
+            <IteamCount stock={10}/>
+            
         </div>
     )
 }
