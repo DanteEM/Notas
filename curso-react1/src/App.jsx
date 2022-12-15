@@ -1,11 +1,14 @@
 import React from "react";
-import Navbar from "./components/navbar";
 import Producto from "./components/Producto";
+import Header from "./components/Header";
+
+
+
 
 const App = () => {
   return ( 
     <div className="container" >
-      <Navbar nombre={"Contacto"} />
+      <Header />
       <Producto/>
     </div>
   )

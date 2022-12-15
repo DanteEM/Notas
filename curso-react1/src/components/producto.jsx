@@ -10,7 +10,7 @@ class Producto extends Component {
         return (
             <div className="row ">
                 <div className="col-md-5 offset-md-2" >
-                    <img src={imagen_producto} alt={nombre_producto} className="img-fluid" />
+                    <img src={imagen_producto} alt={nombre_producto} className="img-fluid" width="430"/>
                 </div>
                 <div className="col-md-4">
                     <h1>{nombre_producto}</h1>
