@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -7,12 +8,18 @@ import Footer from "./components/Footer";
 
 
 const App = () => {
-  return ( 
+  return (
     <div className="container" >
-      <Header />
-      <Banner />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Banner />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
+
+
   )
 
 }
