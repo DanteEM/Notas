@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import arrayProductos from "./json/Productos.json"
 import ItemDetail from "./ItemDetail"
 
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState([]);
+
+    
 
 
         useEffect(() => {
