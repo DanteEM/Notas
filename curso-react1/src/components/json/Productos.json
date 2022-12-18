@@ -1,0 +1,54 @@
+[{
+    "id": 1,
+    "nombre": "Caldo de Pollo mediano",
+    "description": "Satisfacete con este plato para uno, te encantara!",
+    "imagen": "https://i.blogs.es/716419/caldodepollo/1366_2000.jpg",
+    "precio": 6,
+    "stock": 13,
+    "categoria": "Sopas"
+}, 
+{"id": 2,
+    "nombre": "Caldo de Pollo Grande",
+    "description": "EL mediano no es suficiente? Prueba este y ya veras!",
+    "imagen": "https://recetatipica.com/wp-content/uploads/2020/04/caldo-de-pollo.jpg",
+    "precio": 8,
+    "stock": 16,
+    "categoria": "Sopas"},
+ {
+    "id": 3,
+    "nombre": "Chifa",
+    "description": "Algo variado para compartir",
+    "imagen": "https://lascomidasperuanas.com/wp-content/uploads/2021/05/Receta-de-aeropuerto-chifa-peruano.jpg",
+    "precio": 5,
+    "stock": 12,
+    "categoria": "Chifas"
+}, {
+    "id": 4,
+    "nombre": "Ajinomen",
+    "description": "Una sopa rapida para el gusto de todos!",
+    "imagen": "https://pentaperu.com/wp-content/uploads/2021/04/AJINOMEN.png",
+    "precio": 2,
+    "stock": 15,
+    "categoria": "Instantaneas"
+}, {
+    "id": 5,
+    "nombre": "Maruchan",
+    "description": "Una sopa rapida para el gusto de todos!",
+    "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/05/curiosidades-de-la-sopa-instantanea.jpg",
+    "precio": 2,
+    "stock": 6,
+    "categoria": "Instantaneas"
+}
+, {
+    "id": 6,
+    "nombre": "Chicha Morada",
+    "description": "Refrescate con nuestra Chicha!",
+    "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/05/curiosidades-de-la-sopa-instantanea.jpg",
+    "precio": 1,
+    "stock": 6,
+    "categoria": "Bebida"
+}
+
+
+
+]
