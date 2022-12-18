@@ -1,34 +1,35 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import arrayProductos from "./json/Productos.json"
-import IteamCount from "./ItemCount";
-import { useState } from "react";
-import IteamList from "./ItemList";
-import ItemDetailContainer from "./ItemDetailContainer";
+import ItemCount from "./ItemCount";
+import ItemList from "./ItemList";
 
-const IteamListContainer = ({ greeting }) => {
-    
+const IteamListContainer = () => {
+
 
     const [items, setItems] = useState([]);
+    const { id } = useParams()
+
+    console.log(id);
 
     useEffect(() => {
-        const promesa = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(arrayProductos);
-            }, 2000)
-        });
+            const promesa = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos);
+                }, 2000)
+            });
 
-        promesa.then((data) => {
-            setItems(data);
-        })
-
-    });
+            promesa.then((data) => {
+                setItems(data);
+            })
+    }, [id]);
 
 
     return (
         <div className="container">
-            <IteamList items={items} />
-            <IteamCount stock={10} />
+            <ItemList items={items} />
+            <ItemCount stock={10} />
         </div>
     )
 }

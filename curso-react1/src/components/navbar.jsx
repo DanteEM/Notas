@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link, NavLink } from "react-router-dom";
 import CartWidget from "./Cartwidget";
-import Header from "./Header";
+
 
 const Navbar = (props) => {
   return (
@@ -16,13 +16,13 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink className="nav-link" to={"/categoria/Sopas"}>Sopas</NavLink>
+              <NavLink className="nav-link" to={"/category/Sopas"}>Sopas</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to={"/categoria/chifas"}>Chifas</NavLink>
+              <NavLink className="nav-link" to={"/category/Chifas"}>Chifas</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to={"/categoria/bebidas"}>bebidas</NavLink>
+              <NavLink className="nav-link" to={"/category/Bebida"}>bebidas</NavLink>
             </li>
 
           </ul>

@@ -7,13 +7,13 @@ import ItemDetail from "./ItemDetail"
 const ItemDetailContainer = () => {
     const [item, setItem] = useState([]);
 
-    
+    const {id} = useParams();
 
 
         useEffect(() => {
             const promesa = new Promise((resolve, reject) => {
                 setTimeout(() => {
-                    resolve(arrayProductos.find(item => item.id === 1));
+                    resolve(arrayProductos.find(item => item.id === parseInt(id)));
                 }, 2000)
             });
     
@@ -21,10 +21,10 @@ const ItemDetailContainer = () => {
                 setItem(data);
             })
     
-        });
+        }, [id]);
     
     return(
-        <div className="container">
+        <div className="container my-4">
         <ItemDetail item={item}/>
         </div>
     )
